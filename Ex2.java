@@ -1,4 +1,4 @@
-package nik.com;
+package day7.com;
 
 import java.util.Scanner;
 
@@ -6,22 +6,33 @@ public class Ex2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int num1,num2;
-		Scanner sc =new Scanner(System.in);
-		System.out.println("enter Number");
-		num1=sc.nextInt();
-		System.out.println("enter Number");
-		num2=sc.nextInt();
-		if(num1>num2)
+		int marks;
+	    Scanner sc =new Scanner(System.in);
+		System.out.println("enter 1st Number");
+		marks=sc.nextInt();
+		
+		
+		if((marks>=90)&&(marks<=100))
 		{
-	      System.out.println(+num1+ "is large" );
-
+			System.out.println("Grade A");
 		}
-		else {
-			System.out.println(+num2+ "is large");
-
+		else if((marks>=70)&&(marks<=89))
+		{
+			System.out.println("Grade B");
 		}
-	}
+		else if((marks>=50)&&(marks<=69))
+		{
+			System.out.println("Grade C");
+		}
+		else if((marks>=0)&&(marks<=49))
+		{
+			System.out.println("Grade D");
+		}
+		else
+		{
+			System.out.println("Invalid marks");
+		}
+
 	}
 
-
+}
